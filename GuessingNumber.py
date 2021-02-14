@@ -4,8 +4,8 @@ from random import randrange
 import sys
 lifes = 3
 
-value = randrange(20)
-print('Try guessing the number between 0 - 20')
+value = randrange(20) #This will generate a random number between 0 - 20
+print('Try guessing the number between 0 - 20') 
 print('***************************************')
 
 while lifes != 0:

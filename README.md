@@ -1,27 +1,3 @@
 #This is a program of number guessing
-
-from random import randrange
-import sys
-lifes = 3	#This is how many trys the gamer will have to guess the number
-
-value = randrange(20)
-print('Try guessing the number between 0 - 20')
-print('***************************************')
-
-while lifes != 0:
-    print('Enter your guessing: ')
-    guessing = int(input())
-    if guessing == value:
-        print('Congratulation you win')
-        break
-    elif guessing > value:
-        lifes -= 1
-        print('You have',lifes,'lifes remaining')
-        print('The value is lower')
-    elif guessing < value:
-        lifes -= 1
-        print('You have',lifes,'lifes remaining')
-        print('The value is higher')
-
-print('The value was: ',value)
-sys.exit(0)
+This is a game program of guessing a number on at least 3 trys, once you have your first
+try the program will help yo by telling if the number is bigger or smaller
